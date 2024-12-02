@@ -1,0 +1,162 @@
+body {
+	width: 79%;
+	margin: auto;
+	border: solid gray thin;
+}
+
+
+
+.top-bar {
+	background: lightgray;
+}
+
+.top-bar__title {
+	float: left;
+	font-size: 20px;
+	margin: 10px;
+}
+
+.top-bar__menu {
+	width: 50%;
+	text-align: center;
+	font-size: 20px;
+	margin: auto;
+}
+
+.top-bar__item {
+	display: inline-block;
+	margin: 10px;
+}
+
+.top-bar__item a {
+	text-decoration: none;
+	color: black;
+}
+
+.top-bar__item_active a {
+	text-decoration: none;
+	color: red;
+	border-bottom: solid 19px lightgray;
+	border-left: solid 20px lightgray;
+	border-right: solid 20px lightgray;
+}
+
+
+
+.top-content {
+	display: grid;
+	width: 90%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 2px;
+	margin: 10px auto;
+}
+
+.top-content__image {
+	width: 100%;
+}
+
+.top-content__image_1 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+
+
+.logo-content {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+.logo-content__block {
+	display: inline-block;
+	margin: -3.5% 2%;
+	width: 6%;
+}
+
+.logo-content__image {
+	width: 100%
+}
+
+.logo-content__block img {
+	border: solid 2px white;
+	border-radius: 50%;
+}
+
+.logo-content__description {
+	margin: auto;
+}
+
+
+
+.bottom-content {
+	width: 80%;
+	overflow: hidden;
+	margin: auto;
+}
+
+.bottom-content__item {
+	display: grid;
+	margin: 20px auto;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bottom-content__item img {
+	width: 100%;
+	height: 100%;
+}
+
+.bottom-content__text_left {
+	grid-column: span 2;
+	order: -1;
+}
+
+.bottom-content__text_right {
+	grid-column: span 2;
+	order: 1;
+}
+
+.bottom-content__text h3 {
+	font-size: 20px;
+	text-align: center;
+	overflow: hidden;
+	order: 0;
+}
+
+
+
+footer {
+	background: gray;
+	overflow: hidden;
+}
+
+footer> div:first-child {
+	margin: 10px 10px;
+	float: left;
+}
+
+footer> div:last-child {
+	margin: 10px 10px;
+	float: right;
+}
+
+
+@media(max-width: 800px) {
+	.top-content {
+		display: grid;
+		width: 90%;
+		grid-template-columns: 1fr;
+		grid-gap: 2px;
+		margin: 10px auto;
+	}
+	.top-content__image_1 {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+}
